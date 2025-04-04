@@ -129,6 +129,30 @@ Clicker/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Clicker.dir/build.make CMakeFiles/Clicker.dir/build
 .PHONY : Clicker/fast
 
+Background.o: Background.cpp.o
+.PHONY : Background.o
+
+# target to build an object file
+Background.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Clicker.dir/build.make CMakeFiles/Clicker.dir/Background.cpp.o
+.PHONY : Background.cpp.o
+
+Background.i: Background.cpp.i
+.PHONY : Background.i
+
+# target to preprocess a source file
+Background.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Clicker.dir/build.make CMakeFiles/Clicker.dir/Background.cpp.i
+.PHONY : Background.cpp.i
+
+Background.s: Background.cpp.s
+.PHONY : Background.s
+
+# target to generate assembly for a file
+Background.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Clicker.dir/build.make CMakeFiles/Clicker.dir/Background.cpp.s
+.PHONY : Background.cpp.s
+
 ClickableSprite.o: ClickableSprite.cpp.o
 .PHONY : ClickableSprite.o
 
@@ -152,6 +176,30 @@ ClickableSprite.s: ClickableSprite.cpp.s
 ClickableSprite.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Clicker.dir/build.make CMakeFiles/Clicker.dir/ClickableSprite.cpp.s
 .PHONY : ClickableSprite.cpp.s
+
+Score.o: Score.cpp.o
+.PHONY : Score.o
+
+# target to build an object file
+Score.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Clicker.dir/build.make CMakeFiles/Clicker.dir/Score.cpp.o
+.PHONY : Score.cpp.o
+
+Score.i: Score.cpp.i
+.PHONY : Score.i
+
+# target to preprocess a source file
+Score.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Clicker.dir/build.make CMakeFiles/Clicker.dir/Score.cpp.i
+.PHONY : Score.cpp.i
+
+Score.s: Score.cpp.s
+.PHONY : Score.s
+
+# target to generate assembly for a file
+Score.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Clicker.dir/build.make CMakeFiles/Clicker.dir/Score.cpp.s
+.PHONY : Score.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -186,9 +234,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Clicker"
+	@echo "... Background.o"
+	@echo "... Background.i"
+	@echo "... Background.s"
 	@echo "... ClickableSprite.o"
 	@echo "... ClickableSprite.i"
 	@echo "... ClickableSprite.s"
+	@echo "... Score.o"
+	@echo "... Score.i"
+	@echo "... Score.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

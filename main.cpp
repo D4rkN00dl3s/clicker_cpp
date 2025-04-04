@@ -3,96 +3,9 @@
 #include <sstream>
 #include <cmath>
 #include "ClickableSprite.h"
-
-const sf::Vector2i winSize(800, 600);
-
-// Class to handle a clickable sprite (tree)
-
-
-// Class to handle score display
-class Score
-{
-private:
-    sf::Text text;
-    sf::Font font;
-    int score = 0;
-    sf::Sprite box;
-    sf::Texture boxTexture;
-    sf::Vector2u boxSize;
-
-public:
-    Score(const std::string &fontPath, const std::string &boxTexturePath)
-    {
-        if (!font.loadFromFile(fontPath))
-        {
-            std::cerr << "Error loading font: " << fontPath << std::endl;
-            exit(EXIT_FAILURE);
-        }
-
-        if (!boxTexture.loadFromFile(boxTexturePath))
-        {
-            std::cerr << "Error loading texture: " << boxTexturePath << std::endl;
-            exit(EXIT_FAILURE);
-        }
-
-        box.setTexture(boxTexture);
-        box.setPosition(10, 10);
-        box.setScale(1, 0.25f);
-
-        boxSize = boxTexture.getSize();
-
-        text.setFont(font);
-        text.setCharacterSize(24);
-        text.setFillColor(sf::Color::White);
-        text.setPosition(boxSize.x/4, boxSize.y/8);
-        updateText();
-    }
-
-    void increase()
-    {
-        score++;
-        updateText();
-    }
-
-    void updateText()
-    {
-        std::stringstream ss;
-        ss << "Score: " << score;
-        text.setString(ss.str());
-    }
-
-    void draw(sf::RenderWindow &window)
-    {
-        window.draw(box);
-        window.draw(text);
-    }
-};
-
-class Background
-
-{
-private:
-    sf::Texture texture;
-    sf::Sprite sprite;
-public:
-    Background(const std::string &texturePath){
-        if (!texture.loadFromFile(texturePath))
-        {
-            std::cerr << "Error loading texture: " << texturePath << std::endl;
-            exit(EXIT_FAILURE);
-        }
-        sprite.setTexture(texture);
-        sprite.setPosition(0,0);
-        sprite.setScale((float)winSize.x/texture.getSize().x, (float)winSize.y/texture.getSize().y);
-    }
-
-    void draw(sf::RenderWindow &window)
-    {
-        window.draw(sprite);
-    }
-};
-
-
+#include "Score.h"
+#include "Background.h"
+#include "Winsize.h"
 // Game class to handle logic
 class Game
 {

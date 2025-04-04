@@ -10,5 +10,17 @@
   "command": "/usr/bin/c++  -I/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/headers -g -o CMakeFiles/Clicker.dir/ClickableSprite.cpp.o -c /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/ClickableSprite.cpp",
   "file": "/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/ClickableSprite.cpp",
   "output": "CMakeFiles/Clicker.dir/ClickableSprite.cpp.o"
+},
+{
+  "directory": "/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/build",
+  "command": "/usr/bin/c++  -I/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/headers -g -o CMakeFiles/Clicker.dir/Score.cpp.o -c /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/Score.cpp",
+  "file": "/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/Score.cpp",
+  "output": "CMakeFiles/Clicker.dir/Score.cpp.o"
+},
+{
+  "directory": "/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/build",
+  "command": "/usr/bin/c++  -I/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/headers -g -o CMakeFiles/Clicker.dir/Background.cpp.o -c /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/Background.cpp",
+  "file": "/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/Background.cpp",
+  "output": "CMakeFiles/Clicker.dir/Background.cpp.o"
 }
 ]
