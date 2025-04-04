@@ -1,6 +1,7 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <sstream>
+#include <cmath>
 
 const sf::Vector2i winSize(800, 600);
 
@@ -11,8 +12,12 @@ private:
     sf::Sprite sprite;
     sf::Texture texture;
     sf::Clock clock;
+    sf::Clock windClock;
+    float swayAmplitude = 2.5f;
+    float swaySpeed = 2.0f;
     sf::Vector2f originalScale;
     sf::Vector2u originalSize;
+    float currentAngle;
     bool isShrunk = false;
 
 public:
@@ -23,9 +28,9 @@ public:
             std::cerr << "Error loading texture: " << texturePath << std::endl;
             exit(EXIT_FAILURE);
         }
-
         sprite.setTexture(texture);
         sprite.setPosition(x, y);
+        sprite.setScale(2,2);
         originalSize = texture.getSize();
         originalScale = sprite.getScale();
         sprite.setOrigin(originalSize.x/2, originalSize.y/2);
@@ -40,9 +45,15 @@ public:
 
     void shrink()
     {
-        sprite.setScale(0.9f, 0.9f);
+        sprite.setScale(1.9f, 1.9f);
         isShrunk = true;
         clock.restart();
+    }
+
+    void rotate(){
+        float time = windClock.getElapsedTime().asSeconds();
+        float angle = swayAmplitude * std::sin(time * swaySpeed);
+        sprite.setRotation(angle);
     }
 
     void update()
@@ -69,6 +80,7 @@ private:
     int score = 0;
     sf::Sprite box;
     sf::Texture boxTexture;
+    sf::Vector2u boxSize;
 
 public:
     Score(const std::string &fontPath, const std::string &boxTexturePath)
@@ -87,12 +99,14 @@ public:
 
         box.setTexture(boxTexture);
         box.setPosition(10, 10);
-        box.setScale(1, 0.5f);
+        box.setScale(1, 0.25f);
+
+        boxSize = boxTexture.getSize();
 
         text.setFont(font);
         text.setCharacterSize(24);
         text.setFillColor(sf::Color::White);
-        text.setPosition(30, 23);
+        text.setPosition(boxSize.x/4, boxSize.y/8);
         updateText();
     }
 
@@ -163,6 +177,7 @@ public:
         {
             handleEvents();
             update();
+            tree.rotate();
             render();
         }
     }
