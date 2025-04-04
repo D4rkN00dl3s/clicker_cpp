@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/headers
 
 CXX_FLAGS = -g
 

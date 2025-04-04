@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Clicker.dir/ClickableSprite.cpp.o"
+  "CMakeFiles/Clicker.dir/ClickableSprite.cpp.o.d"
   "CMakeFiles/Clicker.dir/main.cpp.o"
   "CMakeFiles/Clicker.dir/main.cpp.o.d"
   "Clicker"

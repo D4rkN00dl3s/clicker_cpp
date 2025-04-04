@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/ClickableSprite.cpp" "CMakeFiles/Clicker.dir/ClickableSprite.cpp.o" "gcc" "CMakeFiles/Clicker.dir/ClickableSprite.cpp.o.d"
   "/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/main.cpp" "CMakeFiles/Clicker.dir/main.cpp.o" "gcc" "CMakeFiles/Clicker.dir/main.cpp.o.d"
   )
 

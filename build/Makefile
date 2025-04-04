@@ -129,6 +129,30 @@ Clicker/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Clicker.dir/build.make CMakeFiles/Clicker.dir/build
 .PHONY : Clicker/fast
 
+ClickableSprite.o: ClickableSprite.cpp.o
+.PHONY : ClickableSprite.o
+
+# target to build an object file
+ClickableSprite.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Clicker.dir/build.make CMakeFiles/Clicker.dir/ClickableSprite.cpp.o
+.PHONY : ClickableSprite.cpp.o
+
+ClickableSprite.i: ClickableSprite.cpp.i
+.PHONY : ClickableSprite.i
+
+# target to preprocess a source file
+ClickableSprite.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Clicker.dir/build.make CMakeFiles/Clicker.dir/ClickableSprite.cpp.i
+.PHONY : ClickableSprite.cpp.i
+
+ClickableSprite.s: ClickableSprite.cpp.s
+.PHONY : ClickableSprite.s
+
+# target to generate assembly for a file
+ClickableSprite.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Clicker.dir/build.make CMakeFiles/Clicker.dir/ClickableSprite.cpp.s
+.PHONY : ClickableSprite.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Clicker"
+	@echo "... ClickableSprite.o"
+	@echo "... ClickableSprite.i"
+	@echo "... ClickableSprite.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

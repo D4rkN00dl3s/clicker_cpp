@@ -2,74 +2,12 @@
 #include <iostream>
 #include <sstream>
 #include <cmath>
+#include "ClickableSprite.h"
 
 const sf::Vector2i winSize(800, 600);
 
 // Class to handle a clickable sprite (tree)
-class ClickableSprite
-{
-private:
-    sf::Sprite sprite;
-    sf::Texture texture;
-    sf::Clock clock;
-    sf::Clock windClock;
-    float swayAmplitude = 2.5f;
-    float swaySpeed = 2.0f;
-    sf::Vector2f originalScale;
-    sf::Vector2u originalSize;
-    float currentAngle;
-    bool isShrunk = false;
 
-public:
-    ClickableSprite(const std::string &texturePath, float x, float y)
-    {
-        if (!texture.loadFromFile(texturePath))
-        {
-            std::cerr << "Error loading texture: " << texturePath << std::endl;
-            exit(EXIT_FAILURE);
-        }
-        sprite.setTexture(texture);
-        sprite.setPosition(x, y);
-        sprite.setScale(2,2);
-        originalSize = texture.getSize();
-        originalScale = sprite.getScale();
-        sprite.setOrigin(originalSize.x/2, originalSize.y/2);
-    }
-
-    sf::Sprite &getSprite() { return sprite; }
-
-    bool isClicked(sf::Vector2i mousePos)
-    {
-        return sprite.getGlobalBounds().contains(mousePos.x, mousePos.y) && !isShrunk;
-    }
-
-    void shrink()
-    {
-        sprite.setScale(1.9f, 1.9f);
-        isShrunk = true;
-        clock.restart();
-    }
-
-    void rotate(){
-        float time = windClock.getElapsedTime().asSeconds();
-        float angle = swayAmplitude * std::sin(time * swaySpeed);
-        sprite.setRotation(angle);
-    }
-
-    void update()
-    {
-        if (isShrunk && clock.getElapsedTime().asSeconds() >= 0.25f)
-        {
-            sprite.setScale(originalScale);
-            isShrunk = false;
-        }
-    }
-
-    void draw(sf::RenderWindow &window)
-    {
-        window.draw(sprite);
-    }
-};
 
 // Class to handle score display
 class Score
