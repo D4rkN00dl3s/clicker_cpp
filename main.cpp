@@ -11,7 +11,8 @@ private:
     sf::Sprite sprite;
     sf::Texture texture;
     sf::Clock clock;
-    sf::Vector2f originalSize;
+    sf::Vector2f originalScale;
+    sf::Vector2u originalSize;
     bool isShrunk = false;
 
 public:
@@ -25,7 +26,8 @@ public:
 
         sprite.setTexture(texture);
         sprite.setPosition(x, y);
-        originalSize = sprite.getScale();
+        originalSize = texture.getSize();
+        originalScale = sprite.getScale();
         sprite.setOrigin(originalSize.x/2, originalSize.y/2);
     }
 
@@ -47,7 +49,7 @@ public:
     {
         if (isShrunk && clock.getElapsedTime().asSeconds() >= 0.25f)
         {
-            sprite.setScale(originalSize);
+            sprite.setScale(originalScale);
             isShrunk = false;
         }
     }
@@ -90,7 +92,7 @@ public:
         text.setFont(font);
         text.setCharacterSize(24);
         text.setFillColor(sf::Color::White);
-        text.setPosition(90, 20);
+        text.setPosition(30, 23);
         updateText();
     }
 
@@ -150,8 +152,8 @@ private:
 
 public:
     Game() : window(sf::VideoMode(winSize.x, winSize.y), "SFML Window"),
-             tree("../sprites/tree.png", 350, 200),
-             score("../fonts/WinkySans.ttf", "../sprites/score_bg.png"),
+             tree("../sprites/tree.png", winSize.x/2, winSize.y/2),
+             score("../fonts/font.ttf", "../sprites/score_bg.png"),
              background("../sprites/bg.png")
              {}
 
