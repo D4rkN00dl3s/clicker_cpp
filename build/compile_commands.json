@@ -22,5 +22,11 @@
   "command": "/usr/bin/c++  -I/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/headers -g -o CMakeFiles/Clicker.dir/Background.cpp.o -c /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/Background.cpp",
   "file": "/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/Background.cpp",
   "output": "CMakeFiles/Clicker.dir/Background.cpp.o"
+},
+{
+  "directory": "/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/build",
+  "command": "/usr/bin/c++  -I/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/headers -g -o CMakeFiles/Clicker.dir/Game.cpp.o -c /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/Game.cpp",
+  "file": "/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/Game.cpp",
+  "output": "CMakeFiles/Clicker.dir/Game.cpp.o"
 }
 ]

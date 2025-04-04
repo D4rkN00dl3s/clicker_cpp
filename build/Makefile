@@ -177,6 +177,30 @@ ClickableSprite.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Clicker.dir/build.make CMakeFiles/Clicker.dir/ClickableSprite.cpp.s
 .PHONY : ClickableSprite.cpp.s
 
+Game.o: Game.cpp.o
+.PHONY : Game.o
+
+# target to build an object file
+Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Clicker.dir/build.make CMakeFiles/Clicker.dir/Game.cpp.o
+.PHONY : Game.cpp.o
+
+Game.i: Game.cpp.i
+.PHONY : Game.i
+
+# target to preprocess a source file
+Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Clicker.dir/build.make CMakeFiles/Clicker.dir/Game.cpp.i
+.PHONY : Game.cpp.i
+
+Game.s: Game.cpp.s
+.PHONY : Game.s
+
+# target to generate assembly for a file
+Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Clicker.dir/build.make CMakeFiles/Clicker.dir/Game.cpp.s
+.PHONY : Game.cpp.s
+
 Score.o: Score.cpp.o
 .PHONY : Score.o
 
@@ -240,6 +264,9 @@ help:
 	@echo "... ClickableSprite.o"
 	@echo "... ClickableSprite.i"
 	@echo "... ClickableSprite.s"
+	@echo "... Game.o"
+	@echo "... Game.i"
+	@echo "... Game.s"
 	@echo "... Score.o"
 	@echo "... Score.i"
 	@echo "... Score.s"

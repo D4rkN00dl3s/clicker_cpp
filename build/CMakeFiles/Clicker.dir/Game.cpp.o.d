@@ -1,5 +1,5 @@
-CMakeFiles/Clicker.dir/main.cpp.o: \
- /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/main.cpp \
+CMakeFiles/Clicker.dir/Game.cpp.o: \
+ /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/Game.cpp \
  /usr/include/stdc-predef.h \
  /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/headers/Game.h \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \

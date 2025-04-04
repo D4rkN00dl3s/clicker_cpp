@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/Background.cpp" "CMakeFiles/Clicker.dir/Background.cpp.o" "gcc" "CMakeFiles/Clicker.dir/Background.cpp.o.d"
   "/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/ClickableSprite.cpp" "CMakeFiles/Clicker.dir/ClickableSprite.cpp.o" "gcc" "CMakeFiles/Clicker.dir/ClickableSprite.cpp.o.d"
+  "/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/Game.cpp" "CMakeFiles/Clicker.dir/Game.cpp.o" "gcc" "CMakeFiles/Clicker.dir/Game.cpp.o.d"
   "/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/Score.cpp" "CMakeFiles/Clicker.dir/Score.cpp.o" "gcc" "CMakeFiles/Clicker.dir/Score.cpp.o.d"
   "/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/main.cpp" "CMakeFiles/Clicker.dir/main.cpp.o" "gcc" "CMakeFiles/Clicker.dir/main.cpp.o.d"
   )
