@@ -225,6 +225,30 @@ Score.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Clicker.dir/build.make CMakeFiles/Clicker.dir/Score.cpp.s
 .PHONY : Score.cpp.s
 
+Upgradebutton.o: Upgradebutton.cpp.o
+.PHONY : Upgradebutton.o
+
+# target to build an object file
+Upgradebutton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Clicker.dir/build.make CMakeFiles/Clicker.dir/Upgradebutton.cpp.o
+.PHONY : Upgradebutton.cpp.o
+
+Upgradebutton.i: Upgradebutton.cpp.i
+.PHONY : Upgradebutton.i
+
+# target to preprocess a source file
+Upgradebutton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Clicker.dir/build.make CMakeFiles/Clicker.dir/Upgradebutton.cpp.i
+.PHONY : Upgradebutton.cpp.i
+
+Upgradebutton.s: Upgradebutton.cpp.s
+.PHONY : Upgradebutton.s
+
+# target to generate assembly for a file
+Upgradebutton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Clicker.dir/build.make CMakeFiles/Clicker.dir/Upgradebutton.cpp.s
+.PHONY : Upgradebutton.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -270,6 +294,9 @@ help:
 	@echo "... Score.o"
 	@echo "... Score.i"
 	@echo "... Score.s"
+	@echo "... Upgradebutton.o"
+	@echo "... Upgradebutton.i"
+	@echo "... Upgradebutton.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

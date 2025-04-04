@@ -1,7 +1,7 @@
-CMakeFiles/Clicker.dir/main.cpp.o: \
- /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/main.cpp \
+CMakeFiles/Clicker.dir/Upgradebutton.cpp.o: \
+ /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/Upgradebutton.cpp \
  /usr/include/stdc-predef.h \
- /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/headers/Game.h \
+ /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/headers/Upgradebutton.h \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
@@ -236,33 +236,4 @@ CMakeFiles/Clicker.dir/main.cpp.o: \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp /usr/include/c++/13/iostream \
- /usr/include/c++/13/istream /usr/include/c++/13/bits/istream.tcc \
- /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/headers/ClickableSprite.h \
- /usr/include/c++/13/cmath /usr/include/math.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/13/bits/specfun.h /usr/include/c++/13/limits \
- /usr/include/c++/13/tr1/gamma.tcc \
- /usr/include/c++/13/tr1/special_function_util.h \
- /usr/include/c++/13/tr1/bessel_function.tcc \
- /usr/include/c++/13/tr1/beta_function.tcc \
- /usr/include/c++/13/tr1/ell_integral.tcc \
- /usr/include/c++/13/tr1/exp_integral.tcc \
- /usr/include/c++/13/tr1/hypergeometric.tcc \
- /usr/include/c++/13/tr1/legendre_function.tcc \
- /usr/include/c++/13/tr1/modified_bessel_func.tcc \
- /usr/include/c++/13/tr1/poly_hermite.tcc \
- /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc \
- /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/headers/Score.h \
- /usr/include/c++/13/sstream /usr/include/c++/13/bits/sstream.tcc \
- /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/headers/Background.h \
- /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/headers/Winsize.h \
- /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/headers/Upgradebutton.h
+ /usr/include/c++/13/istream /usr/include/c++/13/bits/istream.tcc

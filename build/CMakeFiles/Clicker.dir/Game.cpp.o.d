@@ -264,4 +264,5 @@ CMakeFiles/Clicker.dir/Game.cpp.o: \
  /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/headers/Score.h \
  /usr/include/c++/13/sstream /usr/include/c++/13/bits/sstream.tcc \
  /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/headers/Background.h \
- /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/headers/Winsize.h
+ /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/headers/Winsize.h \
+ /home/d4rkn00dl3s/Documents/cpp/clicker_cpp/headers/Upgradebutton.h

@@ -4,6 +4,7 @@
 #include "Score.h"
 #include "Background.h"
 #include "Winsize.h"
+#include "Upgradebutton.h"
 
 class Game
 {
@@ -12,6 +13,7 @@ private:
     ClickableSprite tree;
     Score score;
     Background background;
+    UpgradeButton upgradebutton;
 
 public:
     Game();

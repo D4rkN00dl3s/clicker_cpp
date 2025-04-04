@@ -3,7 +3,8 @@
 Game::Game() : window(sf::VideoMode(winSize.x, winSize.y), "SFML Window"),
              tree("../sprites/tree.png", winSize.x/2, winSize.y/2),
              score("../fonts/font.ttf", "../sprites/score_bg.png"),
-             background("../sprites/bg.png")
+             background("../sprites/bg.png"),
+             upgradebutton("../sprites/button_tex.png")
              {}
 
     void Game::run()
@@ -37,6 +38,10 @@ Game::Game() : window(sf::VideoMode(winSize.x, winSize.y), "SFML Window"),
                     tree.shrink();
                     score.increase();
                 }
+                if (upgradebutton.isClicked(mousePos))
+                {
+
+                }
             }
         }
     }
@@ -52,5 +57,6 @@ Game::Game() : window(sf::VideoMode(winSize.x, winSize.y), "SFML Window"),
         background.draw(window);
         tree.draw(window);
         score.draw(window);
+        upgradebutton.draw(window);
         window.display();
     }
