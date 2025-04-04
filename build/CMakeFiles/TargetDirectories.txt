@@ -1,0 +1,3 @@
+/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/build/CMakeFiles/Clicker.dir
+/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/build/CMakeFiles/edit_cache.dir
+/home/d4rkn00dl3s/Documents/cpp/clicker_cpp/build/CMakeFiles/rebuild_cache.dir
